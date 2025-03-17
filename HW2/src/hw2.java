@@ -40,7 +40,7 @@ public class hw2 {
     s.close();
 
     for (int i = 0; i < case_num; i++) {
-      System.out.println("Case " + (i + 1) + ": " + get_Ans(datasets[i]));
+      System.out.println("Case " + (i + 1) + ": " + get_Ans(datasets[i]) + ".");
     }
   }
 
