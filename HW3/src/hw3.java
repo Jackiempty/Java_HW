@@ -42,6 +42,30 @@ public class hw3 {
   static int get_Ans(char[] dataset) {
     // System.out.println(dataset);
     int result = 0;
+    for (int i = 1; i <= dataset.length; i++) {
+      // System.out.print("i:" + i);
+      char[] sub_string = new char[i];
+      for (int j = 0; j <= dataset.length - i; j++) {
+        // System.out.print(" j:" + j);
+        for (int k = j; k < j + i; k++) {
+          // System.out.println(" k:" + k);
+          sub_string[k - j] = dataset[k];
+        }
+        System.out.print(sub_string);
+        System.out.println(": " + palindrome(sub_string));
+        if (palindrome(sub_string))
+          result++;
+      }
+    }
     return result;
+  }
+
+  static boolean palindrome(char[] s) {
+    int length = s.length;
+    for (int i = 0; i < length / 2; ++i) {
+      if (s[i] != s[length - 1 - i])
+        return false;
+    }
+    return true;
   }
 }
