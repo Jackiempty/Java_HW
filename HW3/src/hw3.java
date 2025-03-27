@@ -51,8 +51,8 @@ public class hw3 {
           // System.out.println(" k:" + k);
           sub_string[k - j] = dataset[k];
         }
-        System.out.print(sub_string);
-        System.out.println(": " + palindrome(sub_string));
+        // System.out.print(sub_string);
+        // System.out.println(": " + palindrome(sub_string));
         if (palindrome(sub_string))
           result++;
       }
