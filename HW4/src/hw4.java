@@ -54,7 +54,7 @@ public class hw4 {
   static int get_Ans(int[][] dataset) {
     // System.out.println(dataset);
     int result = 1000;
-    boolean yes_or_no = false;
+    boolean yes_or_no = true;
     int num = dataset[0][0];
 
     for (int i = 1; i < dataset.length; i++) {
